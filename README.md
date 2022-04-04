@@ -16,7 +16,7 @@ req = ["Arg1","Arg2"]
 reqhelp = ["First Argument","Second Argument"]
 opts= ["opt1","opt2"]
 optsHelp = ["First optional argument","Second optional argument"]
-optsDefault = ["opt1 default",28]
+optsDefault = ["opt1Default",28]
 flags = ["w"]
 flagHelp = ["a flag, value is always true/false (default false)"]
 title = "Example usage statement"
@@ -37,4 +37,26 @@ A = parse_args(R)
 The resulting dict A contains the values for all command line arguments, keyed by the string
 variable specified in the input vectors to process_reqs (ie "Arg1", "opt1", "w"). If optional
 argument names are provided (the opt vector), default values must also be provided (optsHelp).
-These can be any type.
+These can be any type.  
+
+### Usage statement format
+>\#  
+>\#  Example usage statement  
+>\#  
+>
+>A demo version of a usage statement showing the code required to generate it
+>
+>  [required arguments] [options]
+>
+>\# Required Arguments  
+>  Arg1 : First Argument  
+>  Arg2 : Second Argument  
+>
+>\# Optional Arguments < default >  
+>  --opt1 < opt1Default > : First optional argument  
+>  --opt2 < 28 > : Second optional argument  
+>
+>\#  Optional Flags  
+>  -w : a flag, value is always true/false (default false)
+
+
